@@ -57,6 +57,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="register.css" rel="stylesheet">
     <!-- Bootstrap links -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
@@ -67,9 +68,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
   </head>
 <body>
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-        <h3>Sign up</h3>
-        <input type="text" placeholder="Username/Email" required>
-        <input type="text" placeholder="Enter password" required>
+        <h3 class="main-text">Sign up</h3>
+        <input class="user-input" type="text" placeholder="Username/Email" required>
+        <input class="password-input" type="text" placeholder="Password" required>
     </form>
 </body>
 </html>
